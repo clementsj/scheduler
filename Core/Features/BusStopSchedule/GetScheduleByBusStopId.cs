@@ -46,23 +46,22 @@ namespace GMV.Core.Features.Routes
 
             private IEnumerable<string> GetScheduleByBusStopId(int busId, int routeId)
             {
-                var baseTime = DateTime.Now.AddMinutes(-15).NextQuarterOfTheHour();
-                var baseNumber = (busId + routeId - 2) * 2 + baseTime;
+                var startTime = DateTime.Now;
+                var moddedTime = startTime.AddMinutes(-15 - busId);
+                var baseTime = moddedTime.NextQuarterOfTheHour();
 
-                if (baseNumber < DateTime.Now.Minute)
+                if (baseTime + ((busId - 1) * 2) < DateTime.Now.Minute)
                 {
                     baseTime = DateTime.Now.NextQuarterOfTheHour();
-                    baseNumber = (busId + routeId - 2) * 2 + baseTime;
                 }
 
-                var schedule = new string[] {
-                    DateTime.Now.AddMinutes(baseNumber % 60).ToString("h:mm tt"),
-                    DateTime.Now.AddMinutes((baseNumber + 15) % 60).ToString("h:mm tt")
+                var baseNumber = (busId + routeId - 2) * 2 + baseTime;
+                var scheduledStopTime = startTime.CreateBusStopDateTime(baseNumber);
+
+                return new string[] {
+                    scheduledStopTime.ToString("h:mm tt"),
+                    scheduledStopTime.AddMinutes(15).ToString("h:mm tt")
                 };
-
-                Array.Sort(schedule);
-
-                return schedule;
             }
         }        
     }
