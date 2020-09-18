@@ -1,62 +1,42 @@
 
-<div class="container">
-  <h2>Select Bus Stop</h2>
 
-  <mat-form-field>
-      <mat-label> Bus Stop </mat-label>
-      <mat-select [(ngModel)]="selectedStop" (selectionChange)="onStopChange($event)">
-          <mat-option>
-            Select Stop
-          </mat-option>
-          <mat-option *ngFor="let busStop of busStops" [value]="busStop.id">
-              {{ busStop.name }}
-          </mat-option>
-      </mat-select>
-  </mat-form-field>
+<mat-toolbar fxLayout color="primary">
+    <h2>Select Bus Stop</h2>
+</mat-toolbar>
   
-  <table *ngIf="busSchedule">
-      <thead>
-          <tr>
-              <th>
-                  Route 1
-              </th>
-              <th>
-                  Route 2
-              </th>
-              <th>
-                  Route 3
-              </th>
-          </tr>
-      </thead>
-  
-      <tbody>
-          <tr>
-              <td>
-                  {{ busSchedule.route1[0] }}
-              </td>
-  
-              <td>
-                  {{ busSchedule.route2[0] }}
-              </td>
-  
-              <td>
-                  {{ busSchedule.route3[0] }}
-              </td>
-          </tr>
-          <tr>
-              <td>
-                  {{ busSchedule.route1[1] }}
-              </td>
-  
-              <td>
-                  {{ busSchedule.route2[1] }}
-              </td>
-  
-              <td>
-                  {{ busSchedule.route3[1] }}
-              </td>
-          </tr>
-      </tbody>
-  </table>
+<div class="container">
+    <div class="flex-container" fxLayout="row">
+        <mat-form-field>
+            <mat-label> Bus Stop </mat-label>
+            <mat-select [(ngModel)]="selectedStop" (selectionChange)="onStopChange($event)">
+                <mat-option>
+                  Select Stop
+                </mat-option>
+                <mat-option *ngFor="let busStop of busStops" [value]="busStop.id">
+                    {{ busStop.name }}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <div class="flex-container" fxLayout="row" *ngIf="busSchedule"> 
+            <div  fxLayout="column">
+                <mat-card class="child-1">Route 1</mat-card> 
+                <mat-card class="child-2">{{ busSchedule.route1[0] }}</mat-card> 
+                <mat-card class="child-3">{{ busSchedule.route1[1] }}</mat-card>
+            </div>
+
+            <div fxLayout="column">
+                <mat-card class="child-1">Route 2</mat-card> 
+                <mat-card class="child-2">{{ busSchedule.route2[0] }}</mat-card> 
+                <mat-card class="child-3">{{ busSchedule.route2[1] }}</mat-card>
+            </div>
+
+            <div fxLayout="column">
+                <mat-card class="child-1">Route 3</mat-card> 
+                <mat-card class="child-2">{{ busSchedule.route3[0] }}</mat-card> 
+                <mat-card class="child-3">{{ busSchedule.route3[1] }}</mat-card>
+            </div>
+        </div>
+    </div>
 </div>
  
