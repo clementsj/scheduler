@@ -1,0 +1,8 @@
+C:\Projects\GMVBusRoutes\GMV.Core\bin\Debug\netstandard2.0\GMV.Core.deps.json
+C:\Projects\GMVBusRoutes\GMV.Core\bin\Debug\netstandard2.0\GMV.Core.dll
+C:\Projects\GMVBusRoutes\GMV.Core\obj\Debug\netstandard2.0\GMV.Core.AssemblyInfoInputs.cache
+C:\Projects\GMVBusRoutes\GMV.Core\obj\Debug\netstandard2.0\GMV.Core.AssemblyInfo.cs
+C:\Projects\GMVBusRoutes\GMV.Core\bin\Debug\netstandard2.0\GMV.Core.pdb
+C:\Projects\GMVBusRoutes\GMV.Core\obj\Debug\netstandard2.0\GMV.Core.dll
+C:\Projects\GMVBusRoutes\GMV.Core\obj\Debug\netstandard2.0\GMV.Core.pdb
+C:\Projects\GMVBusRoutes\GMV.Core\obj\Debug\netstandard2.0\GMV.Core.csprojAssemblyReference.cache
