@@ -19,11 +19,11 @@ namespace GMV.Core.Features.Routes
         {
             public int Id { get; set; }
 
-            public IEnumerable<int> Route1 { get; set; }
+            public IEnumerable<string> Route1 { get; set; }
 
-            public IEnumerable<int> Route2 { get; set; }
+            public IEnumerable<string> Route2 { get; set; }
 
-            public IEnumerable<int> Route3 { get; set; }
+            public IEnumerable<string> Route3 { get; set; }
         }
 
         public class Handler : IRequestHandler<Query, BusStopSchedule>
@@ -44,7 +44,7 @@ namespace GMV.Core.Features.Routes
                 });
             }
 
-            private IEnumerable<int> GetScheduleByBusStopId(int busId, int routeId)
+            private IEnumerable<string> GetScheduleByBusStopId(int busId, int routeId)
             {
                 var baseTime = DateTime.Now.AddMinutes(-15).NextQuarterOfTheHour();
                 var baseNumber = (busId + routeId - 2) * 2 + baseTime;
@@ -55,7 +55,14 @@ namespace GMV.Core.Features.Routes
                     baseNumber = (busId + routeId - 2) * 2 + baseTime;
                 }
 
-                return new int[] { baseNumber % 60, (baseNumber + 15) % 60 };
+                var schedule = new string[] {
+                    DateTime.Now.AddMinutes(baseNumber % 60).ToString("h:mm tt"),
+                    DateTime.Now.AddMinutes((baseNumber + 15) % 60).ToString("h:mm tt")
+                };
+
+                Array.Sort(schedule);
+
+                return schedule;
             }
         }        
     }
