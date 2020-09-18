@@ -8584,11 +8584,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projects\\GMVBusRoutes\\Test\\Test.csproj",
+      "projectUniqueName": "C:\\Projects\\Scheduler\\Test\\Test.csproj",
       "projectName": "Test",
-      "projectPath": "C:\\Projects\\GMVBusRoutes\\Test\\Test.csproj",
+      "projectPath": "C:\\Projects\\Scheduler\\Test\\Test.csproj",
       "packagesPath": "C:\\Users\\jclem\\.nuget\\packages\\",
-      "outputPath": "C:\\Projects\\GMVBusRoutes\\Test\\obj\\",
+      "outputPath": "C:\\Projects\\Scheduler\\Test\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -8609,8 +8609,8 @@
       "frameworks": {
         "netcoreapp3.0": {
           "projectReferences": {
-            "C:\\Projects\\GMVBusRoutes\\Api\\Api.csproj": {
-              "projectPath": "C:\\Projects\\GMVBusRoutes\\Api\\Api.csproj"
+            "C:\\Projects\\Scheduler\\Api\\Api.csproj": {
+              "projectPath": "C:\\Projects\\Scheduler\\Api\\Api.csproj"
             }
           }
         }

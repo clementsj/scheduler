@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projects\\GMVBusRoutes\\Api\\Api.csproj": {}
+    "C:\\Projects\\Scheduler\\Api\\Api.csproj": {}
   },
   "projects": {
-    "C:\\Projects\\GMVBusRoutes\\Api\\Api.csproj": {
+    "C:\\Projects\\Scheduler\\Api\\Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\GMVBusRoutes\\Api\\Api.csproj",
+        "projectUniqueName": "C:\\Projects\\Scheduler\\Api\\Api.csproj",
         "projectName": "Api",
-        "projectPath": "C:\\Projects\\GMVBusRoutes\\Api\\Api.csproj",
+        "projectPath": "C:\\Projects\\Scheduler\\Api\\Api.csproj",
         "packagesPath": "C:\\Users\\jclem\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\GMVBusRoutes\\Api\\obj\\",
+        "outputPath": "C:\\Projects\\Scheduler\\Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -32,8 +32,8 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "C:\\Projects\\GMVBusRoutes\\Core\\Core.csproj": {
-                "projectPath": "C:\\Projects\\GMVBusRoutes\\Core\\Core.csproj"
+              "C:\\Projects\\Scheduler\\Core\\Core.csproj": {
+                "projectPath": "C:\\Projects\\Scheduler\\Core\\Core.csproj"
               }
             }
           }
@@ -100,14 +100,14 @@
         }
       }
     },
-    "C:\\Projects\\GMVBusRoutes\\Core\\Core.csproj": {
+    "C:\\Projects\\Scheduler\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\GMVBusRoutes\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\Projects\\Scheduler\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Projects\\GMVBusRoutes\\Core\\Core.csproj",
+        "projectPath": "C:\\Projects\\Scheduler\\Core\\Core.csproj",
         "packagesPath": "C:\\Users\\jclem\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\GMVBusRoutes\\Core\\obj\\",
+        "outputPath": "C:\\Projects\\Scheduler\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",

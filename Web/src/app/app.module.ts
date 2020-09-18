@@ -9,7 +9,7 @@ import { AppComponent } from './app.component';
 import { MatCardModule } from '@angular/material/card'
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { HttpClient } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -19,7 +19,7 @@ import { HttpClient } from '@angular/common/http';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    HttpClient,
+    HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
     MatCardModule,
