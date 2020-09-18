@@ -1,9 +1,9 @@
 export interface BusSchedule {
     id: number;
 
-    route1: number[]; 
+    route1: string[]; 
 
-    route2: number[];
+    route2: string[];
 
-    route3: number[];
+    route3: string[];
 }

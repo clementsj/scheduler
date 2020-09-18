@@ -13,3 +13,11 @@ C:\Projects\GMVBusRoutes\Core\obj\Debug\netstandard2.0\Core.AssemblyInfoInputs.c
 C:\Projects\GMVBusRoutes\Core\obj\Debug\netstandard2.0\Core.AssemblyInfo.cs
 C:\Projects\GMVBusRoutes\Core\obj\Debug\netstandard2.0\Core.dll
 C:\Projects\GMVBusRoutes\Core\obj\Debug\netstandard2.0\Core.pdb
+C:\Projects\Scheduler\Core\bin\Debug\netstandard2.0\Core.deps.json
+C:\Projects\Scheduler\Core\bin\Debug\netstandard2.0\Core.dll
+C:\Projects\Scheduler\Core\bin\Debug\netstandard2.0\Core.pdb
+C:\Projects\Scheduler\Core\obj\Debug\netstandard2.0\Core.csprojAssemblyReference.cache
+C:\Projects\Scheduler\Core\obj\Debug\netstandard2.0\Core.AssemblyInfoInputs.cache
+C:\Projects\Scheduler\Core\obj\Debug\netstandard2.0\Core.AssemblyInfo.cs
+C:\Projects\Scheduler\Core\obj\Debug\netstandard2.0\Core.dll
+C:\Projects\Scheduler\Core\obj\Debug\netstandard2.0\Core.pdb

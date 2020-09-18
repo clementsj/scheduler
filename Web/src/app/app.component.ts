@@ -11,12 +11,7 @@ import { ScheduleServices } from './services/schedule.service';
 export class AppComponent { 
   selectedStop: number;
   title = 'Bus Schedule';
-  busSchedule: BusSchedule = {
-    id: 1,
-    route1: [30, 45],
-    route2: [32, 47],
-    route3: [34, 49]
-  };
+  busSchedule: BusSchedule;
   busStops: BusStop[] = [
     {
       id: 1,
