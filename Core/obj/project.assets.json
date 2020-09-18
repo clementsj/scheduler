@@ -491,11 +491,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projects\\GMVBusRoutes\\Core\\Core.csproj",
+      "projectUniqueName": "C:\\Projects\\Scheduler\\Core\\Core.csproj",
       "projectName": "Core",
-      "projectPath": "C:\\Projects\\GMVBusRoutes\\Core\\Core.csproj",
+      "projectPath": "C:\\Projects\\Scheduler\\Core\\Core.csproj",
       "packagesPath": "C:\\Users\\jclem\\.nuget\\packages\\",
-      "outputPath": "C:\\Projects\\GMVBusRoutes\\Core\\obj\\",
+      "outputPath": "C:\\Projects\\Scheduler\\Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",

@@ -1,3 +1,4 @@
+using Api.Extensions;
 using GMV.Api.Extensions;
 using GMV.Core.Extensions;
 using Microsoft.AspNetCore.Builder;
@@ -21,6 +22,7 @@ namespace GMV.Api
         {
             services.AddAndConfigureNodaTime();
             services.AddAndConfigureMediatR();
+            services.AddCorsAllowAllPolicy();
             services.AddAndConfigureSwagger(config);
             services.AddControllers();
         }
@@ -40,6 +42,7 @@ namespace GMV.Api
 
             app.UseRouting();
             app.UseAndConfigureSwagger();
+            app.UseAllowAllCorsPolicy();
 
             app.UseEndpoints(endpoints =>
             {

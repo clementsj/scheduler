@@ -63,8 +63,8 @@ export class AppComponent {
   constructor(private service: ScheduleServices) { };
 
   onStopChange($event){
-    // this.service.getNextTimesForBusStop($event.value).subscribe(
-    //   schedule => this.busSchedule = schedule
-    // );
+    this.service.getNextTimesForBusStop($event.value).subscribe(
+      schedule => this.busSchedule = schedule
+    );
   }
 }
