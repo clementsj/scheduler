@@ -14,6 +14,7 @@ namespace Test.Controllers
 {
     public class RoutesControllerTests
     {
+        [TestFixture]
         public class TheGetRouteMethod : TestBase
         {
             protected override void ConfigureServices(IServiceCollection services)
@@ -29,7 +30,13 @@ namespace Test.Controllers
                 {
                     Id = 1
                 };
-                var expectedSchedule = new GetScheduleByBusStopId.BusStopSchedule();
+                var expectedSchedule = new GetScheduleByBusStopId.BusStopSchedule()
+                {
+                    Id = 1,
+                    Route1 = null,
+                    Route2 = null,
+                    Route3 = null
+                };
 
                 // Arrange
                 GetMockOf<IMediator>()
@@ -43,7 +50,7 @@ namespace Test.Controllers
                 var actionResult = await Get<BusStopScheduleController>().GetScheduleByBusStopId(expectedBusStopQuery);
 
                 // Assert
-                actionResult.Should().Be(expectedBusStopQuery);
+                actionResult.Should().Be(expectedSchedule);
             }
         }
     }
